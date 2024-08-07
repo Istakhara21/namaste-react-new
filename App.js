@@ -1,7 +1,16 @@
-console.log("heelo hjds")
+import React from 'react';
+import ReactDOM from 'react-dom/client';
 
-const root = document.getElementById("root");
-const element = document.createElement("h1");
-element.innerHTML = "Hello World";
+const App = () => {
+  return (
+    <div>
+      <h1>Hello World</h1>
+    </div>
+  );
+};
 
-root.appendChild(element)
+const rootElement = document.getElementById('root');
+const root = ReactDOM.createRoot(rootElement);
+root.render(<App />);
+
+
